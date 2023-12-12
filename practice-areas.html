@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" manifest="/applicationCache/practiceareasManifest.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/72e1509a1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/practice-areas.css">
+    <script type="text/javascript" src="js/practice-areas.js"></script>
+    <link rel="icon" type="image/png"  href="assets/images/logo.svg">
+    <title>Practice Areas</title>
+    <style>
+        .DnD-container{
+            max-width: 337px;
+            margin: auto;
+        }
+
+        #DnD {
+            margin: 0 auto;
+            width: 337px;
+            height: 130px;
+            padding: 10px;
+            border: 1px solid #FF983D;
+        }
+
+        .DnD-title{
+            font-size: 25px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+    </style>
+    
+    <script>
+        function allowDrop(ev){
+            ev.preventDefault();
+        }
+
+        function drag(ev){
+            ev.dataTransfer.setData("Text", ev.target.id);
+        }
+
+        function drop(ev){
+            ev.preventDefault();
+            var data = event.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+    <header class="full-block web-header">
+        <div class="">
+            <div class="web-header-very-top">
+                <div class="container web-header-very-top_flex-container">
+                    <p>Welcome to Plaintiff’s Personal Injury Law</p>
+                    <div class="web-header-very-top_social-media">
+                        <ul>
+                            <li><a target="_blank" href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://google.com"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                            <li><a target="_blank" href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a target="_blank" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a target="_blank" href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="web-header-top">
+                <div class="container web-header-top-flex-container">
+                    <a href="index.html" class="logo"><img src="assets/images/logo2.png" alt="logo"></a>
+                    <div class="web-header-top-contact-us">
+                        <div>
+                            <p>Phones answered 24/7</p>
+                            <p class="web-header-top-contact-us_phone-number">(000) 000-0000</p>
+                        </div>
+                        <a target="_blank" href="mailto:altinduraku02@gmail.com" id="chatnow"><span><img src="assets/images/chat-now.svg" alt="">Chat Live Now!</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="our-philosophy.html">About us</a></li>
+                            <li class="active--page"><a href="practice-areas.html">Pratice Areas</a></li>
+                            <li><a href="Game.html">Game</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="latest-blog.html">Blog</a></li>
+                            <li><a href="getintouch.html">Get In Touch</a></li>
+                        </ul>
+                    </nav>
+                    <div class="navigation-search">
+                        <form id="search-form">
+                            <input type="search" name="kerko" id="search-btn">
+                            <button id="show-search-btn" type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-now">
+            <a href="mailto:altin.duraku@student.uni-pr.edu">
+                <img src="assets/images/chat-now-img.png" alt="chat now agent">
+                <div class="chat-now_text">
+                    <h3>Have Any Question?</h3>
+                    <p>LET’S HAVE A CHAT!</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <main class="full-block">
+        <section>
+            <div class="container">
+                <div class="second-birth-injury">
+                    <p class="second-birth-injury-title"><strong>BIRTH INJURY</strong></p>
+                    <div class="second-birth-injury-content">
+                        <img src="./assets/images/baby-photo.png" alt="baby-photo">
+                        <p class="second-birth-injury-text">The attorneys in this practice area are highly skilled in handling complex medical 
+                            cases and are dedicated to helping families navigate the legal system as they seek to hold those responsible 
+                            accountable. They work closely with medical experts to thoroughly investigate the circumstances surrounding the 
+                            birth injury and build a strong case on behalf of their clients.
+                            If you or a loved one has experienced a birth injury, seeking legal 
+                            representation from a law firm with a dedicated birth injury practice area can 
+                            be a crucial step in obtaining justice and financial compensation. These attorneys are committed to 
+                            fighting for the rights of families affected by birth injuries and will work tirelessly to help you get 
+                            the compensation you deserve.
+                            </p>
+                    </div>
+                </div>
+    
+                <div class="second-business-litigation">
+                    <p class="second-business-litigation-title"><strong>BUSINESS LITIGATION</strong></p>
+                    <div class="second-business-litigation-content">
+                        <p class="second-business-litigation-text">
+                            <img src="./assets/images/learn-icon.png" alt="business-litigation" class="second-business-litigation-img">
+                            When a business is involved in a legal dispute, it can be a time-consuming and costly process. The attorneys in this 
+                            practice area are dedicated to helping businesses resolve disputes as efficiently and effectively as possible, whether 
+                            through negotiation, mediation, or litigation. They work closely with their clients to understand their needs and goals
+                            , and develop a strategy to achieve a successful outcome. If your business is facing a legal dispute, seeking 
+                            representation from a law firm with a strong business litigation practice area can be crucial. These attorneys have 
+                            the knowledge and experience to protect your interests and help you navigate the legal system in order to resolve the 
+                            dispute in a way that is favorable for your business.
+
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="second-catastrophic-injuries">
+                    <p class="second-catastrophic-injuries-title"><strong>CATASTROPHIC INJURIES</strong></p>
+                    <div class="second-catastrophic-injuries-content">
+                        <img src="./assets/images/fire-photo.png" alt="fire-photo">
+                        <p class="second-catastrophic-injuries-text">
+                            The attorneys in this practice area are experienced in handling complex and high-stakes cases, and are dedicated to 
+                            helping their clients obtain the compensation they need to cover the costs of medical treatment, lost wages, and other
+                             damages. They work closely with medical experts to fully understand the nature and extent of the injuries, and develop a strong case on behalf of their clients.
+                             If you or a loved one has suffered a catastrophic injury, seeking representation from a law firm with a dedicated catastrophic injuries 
+                             practice area can be crucial. These attorneys are committed to fighting for the rights of individuals and families affected by catastrophic 
+                             injuries and will work tirelessly to help you get the compensation you deserve.
+
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="second-medical-malpractice">
+                    <p class="second-medical-malpractice-title"><strong>MEDICAL MALPRACTICE</strong></p>
+                    <div class="second-medical-malpractice-content">
+                        <p class="second-medical-malpractice-text">
+                            <img src="./assets/images/stethoscope-photo.png" alt="stethoscope" class="second-medical-malpractice-img">
+                            The attorneys in this practice area are skilled in handling complex medical cases and are dedicated to helping 
+                            their clients hold medical professionals accountable for their mistakes. They work closely with medical experts 
+                            to thoroughly investigate the circumstances surrounding the injury and build a strong case on behalf of their clients. 
+                            If you or a loved one has been injured as a result of medical malpractice, seeking representation from a law firm with 
+                            a dedicated medical malpractice practice area can be crucial. These attorneys are committed to fighting for the rights
+                             of individuals and families affected by medical negligence and will work tirelessly to help you get the compensation 
+                             you deserve.
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="full-block">
+            <div class="container">
+                <div class="more-practice">
+                    <h2 class="more-practice-title">More practice areas</h2>
+                    <p>This law firm is a full-service practice with attorneys experienced in a wide range of legal areas. In addition to the practice areas
+                        mentioned above, this law firm also has experience in the following areas: 
+                        Personal Injury, Family Law, Immigration Law, Intellectual Property Law, Bankruptcy Law, Environment Law
+                        Civil Rights Law, Real Estate Law, Business Law, Criminal Defense.
+                        Overall, this law firm has a diverse team of attorneys who are equipped to handle a wide range of legal issues. 
+                        They are dedicated to providing their clients with personalized, efficient, and effective legal representation.
+                        No matter what legal challenge you are facing, this law firm has the skills and experience to help you find a resolution.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="prevent-birth-injury">
+                    <h2>Treatments to Prevent or Minimize Permanent Injury</h2>
+                <ol class="prevent-birth-injury-list">
+                    <li>Preventing premature birth</li>
+                    <li>Betamethasone</li>
+                    <li>Magnesium sulfate</li>
+                    <li>Theraupetic Hypothermia</li>
+                    <li>Botox</li>
+                    <li>Baclofen</li>
+                    <li>Selective Dorsal Rhizotomy</li>
+                    <li>Hip Muscle Release Surgery</li>
+                    <li>Physical Therapy</li>
+                    <li>Occupational Therapy</li>
+                    <li>Cognitive Behavioral Therapy <abbr title="">CBT</abbr></li>
+                    <li>Speech-Language Therapy</li>
+                    <li>Recreational Therapy</li>
+                    <li>Animal-Assisted Therapy</li>
+                    <li>Complementary and Alternative Therapy</li>
+                </ol>
+                </div>
+
+                <h2 class="personal-injury-law-process-title">How Does the Personal Injury Claim Process Work?</h2>
+                <div class="personal-injury-law-process">
+                    <dl>
+                        <div>
+                            <dt>Receive Medical Treatment</dt>
+                            <dd>Immediately after your accident or incident
+                                , such as a motor vehicle accident, seek med
+                                ical treatment at your nearest hospital or 
+                                medical centre. Doing so can mean you get th
+                                e help you need while also beginning your pa
+                                per trail for the personal injury claim proc
+                                ess. </dd>
+                        </div>
+                        <div>
+                            <dt>Contact a Personal Injury Lawyer</dt>
+                            <dd>If you’ve suffered serious injuries or your situation is more complex than you can handle, contact a personal injury lawyer for help. You c
+                                an explain the facts of your case, which gives your lawyer a foundation to work from while investigating your compensation claim. </dd>
+                        </div>
+                        <div>
+                            <dt>Claim Entitlements and Begin Negotiations</dt>
+                            <dd>After reviewing the facts of your case and waiting until you’re on the road to recovery, your chosen lawyer can claim your entitlements 
+                                to cover your accident-related costs, such as medical care and vehicle damage.</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="practice-nested-list-title">Common Types of Business Litigation</h2>
+                <ul class="practice-nested-list">
+                    <li>Breach of Contract</li>
+                    <li>Employment claims
+                        <ul>
+                            <li>Wage and hour disputes</li>
+                            <li>Harassment or discrimination claims</li>
+                            <li>Retaliation claims</li>
+                            <li>Wrongful termination</li>
+                            <li>Breach of noncompete or nondislosure agreements</li>
+                            <li>Breach of employment contracts</li>
+                            <li><abbr>FMLA</abbr> (Family and Medical Leave Act) violations</li>
+                            <li><abbr>ERISA</abbr> (Employee Retirement Income Security Act) violations</li>
+                        </ul>
+                    </li>
+                    <li>Class Actions
+                        <ul>
+                            <li>Product liability</li>
+                            <li>Data breaches</li>
+                            <li>Pollution</li>
+                            <li>Debt collection practices</li>
+                            <li>Employment practices</li>
+                        </ul>
+                    </li>
+                    <li>Shareholder Oppression and Other Shareholder Disputes</li>
+                    <li>Automotive Litigation</li>
+                    <li>Breach of Fiduciary Duty</li>
+                    <li>Partnership Disputes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="full-block">
+            <div class="container">
+                <h2 class="CSSList-title">Examples of catastrophic injuries include:</h2>
+                <div class="CSSList">
+                    <div class="list-item">Brain injuries</div>
+                    <div class="list-item">Spinal cord injuries</div>
+                    <div class="list-item">Severe cords</div>
+                    <div class="list-item">Amputations</div>
+                    <div class="list-item">Multiple bone fractures</div>
+                    <div class="list-item">Organ damage</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="video-sub-container">
+                    <p>One of our best attorneys at law speech</p>
+                <video width="600" height="280" controls>
+                    <source src="./assets/videos/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag
+                </video>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="audio-sub-container">
+                    <p>One of our best lawyers talking about Long-Term care insurance claims and lawsuits</p>
+                    <audio controls>
+                        <source src="./assets/audios/practiceareasaudio.mp3" type="audio/mp3">
+                        Your browser does not support the audio element
+                    </audio>
+                    <p style="margin-top: 40px;">Podcast by Matt Smyres about "The Undeniable Power of Agile Marketing for Law Firms"</p>
+                    <audio controls>
+                        <source src="./assets/audios/matt.mp3" type="audio/mp3">
+                        Your browser does not support the audio element 
+                    </audio>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="canvas-container">
+                <div class="container">
+                    <div class="theCanvas">
+                        <canvas id="myCanvas" width="285" height="150"></canvas>
+                    </div>
+                    <p class="canvas-paragraph"><mark>by</mark></p>
+                    <div class="theCanvas2">
+                        <canvas id="myCanvas2" width="250" height="150"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="DnD-container">
+                <svg width="400" height="105">
+                    <rect width="400" height="105" style="fill: #FF983D;stroke-width: 1;stroke: #000;"></rect>
+                    <circle cx="165" cy="43" r="40" stroke="black" stroke-width="4" fill="aliceblue"/>
+                </svg>
+                <h3 class="DnD-title">Working with us is as easy as putting this logo in the box</h3>
+                <div id="DnD" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <br>
+                <div id="DnD" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img id="drag1" src="./assets/images/logo.png" alt="foto" draggable="true" ondragstart="drag(event)" >
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="full-block our-location">
+            <div id="map">
+                
+            </div>
+            <div class="container our-location-contact-info"">
+                <div class="our-location-contact-info">
+                    <h2>CONTACT INFORMATION</h2>
+                    <address>
+                        <p>1880 North West, England</p>
+                        <p>Local Number: 1-000-000-0000</p>
+                        <p>Toll Free:<span>1-000-000-0000</span></p>
+                    </address>
+                    <button>GET DIRECTIONS HERE <i class="fa-solid fa-angle-right"></i></button>
+                    <h2>STAY CONNECTED</h2>
+                    <ul>
+                        <li><a target="_blank" href="https://facebook.com" class="our-location-contact-info__facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com" class="our-location-contact-info__twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://google.com" class="our-location-contact-info__google"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a target="_blank" href="https://linkedin.com" class="our-location-contact-info__linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a target="_blank" href="https://youtube.com" class="our-location-contact-info__youtube"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="full-block copyright">
+            <div class="container copyright_content">
+                <p>Copyright © 2016 Templates Jungle. All Right Reserved.<span>|</span></p>
+                <p>Powered By: <a target="_blank" href="https://dribbble.com/tags/junglee">TemplatesJunglee</a></p>
+            </div>
+        </section>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs6kz4vjgFFQ9Wj84dcAiDBQXZmRynDFg&callback=initMap" type="text/javascript"></script>
+  
+</body>
+</html>

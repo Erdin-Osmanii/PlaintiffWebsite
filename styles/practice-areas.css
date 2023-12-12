@@ -1,0 +1,272 @@
+.second-birth-injury, .second-catastrophic-injuries{
+    background-color: aliceblue;
+    border-radius: 50px;
+    border: 3px solid #FF983D;
+    margin-bottom: 20px;
+}
+.second-birth-injury-title{
+    padding-top: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+.second-birth-injury-content, .second-business-litigation-content, .second-catastrophic-injuries-content, .second-medical-malpractice-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.second-birth-injury-content img, .second-catastrophic-injuries-content img{
+    padding-right: 40px;
+    border-right: 1px solid #FF983D;
+    padding-left: 15px;
+}
+
+.second-birth-injury-text, .second-catastrophic-injuries-text{
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.second-business-litigation, .second-medical-malpractice{
+    background-color: #404040;
+    color: white;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.second-business-litigation-title, .second-medical-malpractice-title{
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.second-business-litigation-img, .second-medical-malpractice-img{
+    float: right;
+    padding-left: 40px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    border-left: 1px solid #FF983D;
+}
+
+.second-business-litigation-text, .second-medical-malpractice-text{
+    margin-bottom: 20px;
+}
+
+.second-business-litigation-text:not(img), .second-medical-malpractice-text:not(img){
+    padding-left: 40px;
+}
+
+.second-catastrophic-injuries-title{
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.prevent-birth-injury h2{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.prevent-birth-injury-list{
+    padding: 1.5rem 1.5rem 1.5rem 4em;
+    border: 0.3rem solid #FF983D;
+	columns: 15rem;
+	column-gap: 7rem;
+	column-rule: 4px dotted #FF983D;
+	border-radius: 0.5rem;
+}
+
+.prevent-birth-injury-list > * + *{
+    margin-top: 1rem;
+}
+
+.prevent-birth-injury-list ::marker{
+    content: counters(list-item, '') ': ';
+	font-weight: 700;
+	font-size: 1.5em;
+	color: #FF983D;
+}
+
+.personal-injury-law-process {
+    margin: 0 auto;
+    border: 0.3rem solid #FF983D;
+    padding: clamp(1rem, 2vw, 3rem);
+	border-radius: 0.5rem;
+}
+
+.personal-injury-law-process h2, dl{
+    margin: 0;
+}
+
+.personal-injury-law-process-title {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.personal-injury-law-process > * + * {
+    margin-top: 1rem;
+}
+
+dl{
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+	gap: 1rem;
+}
+
+dl > div{
+    background: #ffab62;
+	padding: 1rem;
+}
+
+dl > div:nth-child(4n - 2) {
+	background: #ffab62;
+}
+
+dl > div:nth-child(4n - 1) {
+	background: #ffab62;
+}
+
+dl > div:nth-child(4n) {
+	background: #ffab62;
+}
+
+dt {
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+dd {
+	margin: 0;
+}
+
+.canvas-container{
+    background-image: linear-gradient(to left, #FF983D, white);
+    transform: scale(0.8, 0.8);
+}
+.theCanvas, .theCanvas2{
+    max-width: 250px;
+    margin: 20px auto;
+    transform: translate(10px, 10px);
+}
+
+.theCanvas{
+    transform: rotate(4deg);
+    transform: skew(5deg, 10deg);
+}
+
+.theCanvas2{
+    transform: rotate(-4deg);
+    transform: skew(10deg, 5deg);
+}
+
+#myCanvas, #myCanvas2{
+    border: 0.3rem solid #FF983D;
+}
+
+.canvas-paragraph{
+    text-align: center;
+    font-size: 25px;
+}
+
+.canvas-paragraph mark{
+    background-color: #FF983D;
+}
+
+.practice-nested-list-title{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.practice-nested-list li{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #FF983D;
+    padding: 10px;
+}
+
+.practice-nested-list li ul {
+    margin-left: 20px;
+}
+
+.practice-nested-list li ul li{
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+}
+
+.video-sub-container{
+    margin: auto;
+    max-width: fit-content;
+    text-align: center;
+}
+
+.video-sub-container p{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.audio-sub-container{
+    margin: auto;
+    max-width: fit-content;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.audio-sub-container p{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.CSSList-title{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+div.CSSList .list-item{
+    display: list-item;
+    margin-right: 10px;
+    border: 1px solid #FF983D;
+    padding: 10px;
+}
+
+div.CSSList .list-item:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+div.CSSList .list-item{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.more-practice-title{
+    column-span: all;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.more-practice{
+    text-align: center;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 1px solid #FF983D;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.more-practice p{
+    margin-bottom: 80px;
+}

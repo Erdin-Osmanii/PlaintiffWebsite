@@ -1,0 +1,248 @@
+@font-face {
+  font-family: RobotoFont;
+  src: url(../assets/fonts/RobotoLight.woff);
+}
+.getintouch h3, .getintouch table th{
+    font-family: RobotoFont;
+    font-weight: bold;
+}
+.getintouch{
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 10px;
+}
+
+.getintouch td:nth-child(2n){
+    background-color: #020202;
+}
+
+.getintouch .getintouch_content h2{
+    font-size: 72px;
+    text-align: center;
+    color: #FF7800;
+    font-weight: 700;
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+.getintouch h2::before{
+    content: 'Contact';
+    opacity: 1;
+    font-size: 200px;
+    letter-spacing: 7px;
+    color: #404040;
+    position: absolute;
+    left: 200px;
+    top: -70px;
+    z-index: -2;
+}
+.getintouch_content>div{
+    display: flex;
+}
+.getintouch_content h3{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.getintouch_content_info{
+    width: 30%;
+    padding-right: 10px;
+}
+.getintouch_content_info p{
+    margin-bottom: 20px;
+}
+.getintouch_content_info ul {
+    list-style-type: circle;
+}
+.getintouch_content_info ul li{
+    margin-bottom: 15px;
+}
+.getintouch_content_info ul li i {
+    float: right;
+    font-size: 20px;
+    position: relative;
+    left: -40px;
+    top: -5px;
+    color: #FF7800;
+}
+.getintouch_content_register{
+    width: 70%;
+}
+.getintouch_content_register table tr td input{
+    float: right;
+    margin-left: 15px;
+    border: none;
+    height: 24px;
+    padding-left: 7px;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+.getintouch_content_register table tr td input:hover{
+    scale: 1.05;
+}
+.getintouch_content_register table tr td input:focus{
+    outline-style:outset;
+    outline-color: #FF7800;
+    outline-width: 2px;
+    scale: 1.06;
+}
+.getintouch_content_register table tfoot tr td input{
+    float: none;
+}
+.getintouch_content_register table tfoot tr{
+    text-align: center;
+}
+.getintouch_content_register table tr td.table-cell-checkbox input{
+    outline: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -10px;
+    color: #000000;
+    border-radius: 3px;
+}
+.getintouch_content_register th{
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+.getintouch_content_register table textarea{
+    margin-top: 10px;
+    outline: none;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 2px;
+}
+.getintouch_content_register table textarea:hover{
+    border: 2px solid #ff7700c7;
+}
+.getintouch_content_register table textarea:focus{
+    border: 2px solid #FF7800;
+}
+.getintouch_content_register table input[type="submit"]{
+   outline: none;
+   background-color: #FF7800;
+   padding: 0 20px;
+   color: #ffffff;
+   font-size: 20px;
+   height: 40px;
+   cursor: pointer;
+}
+.getintouch_content_register table{
+    border-color: #FF7800;
+}
+.errors{
+    position: fixed;
+    z-index: 100;
+    width: 70%;
+    height: 70%;
+    background-color: #FF7800;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    top: 15%;
+    left: 15%;
+}
+.errors #close{
+    float: right;
+    margin: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 7px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.errors.remove-modal{
+    display: none;
+}
+.errors p{
+    line-height: 1.2em;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#mapgeo{
+    width: 500px;
+    height: 500px;
+}
+
+.geoloc-sub-container{
+    max-width: 510px;
+    margin: auto;
+    text-align: center;
+}
+
+.geoloc-title{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.geoloc-btn{
+    max-width: fit-content;
+    border: none;
+    height: 40px;
+    background-color: #FF983D;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.geoloc-btn:hover{
+    box-shadow: 5px 5px 5px gray;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+}
+
+.charges-sub-container{
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 500px;
+    border: 5px dotted #FF983D;
+}
+
+.charges-title{
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.charges-sub-container p{
+    font-size: 18px;
+}
+
+.charges-sub-container > p:nth-last-child(3){
+    margin-bottom: 5px;
+}
+
+.charges-sub-container label{
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+
+#hours_field{
+    width: 150px;
+    text-align: right;
+}
+
+#calculate{
+    background-color: #FF7800;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    padding: 0.5em 1px;
+    max-width: fit-content;
+}
+
+#calculate:hover{
+    box-shadow: -1px 1px 1px #666;
+}
+
+#total{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1em;
+}
